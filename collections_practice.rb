@@ -39,6 +39,7 @@ end
 
 def find_cool(array)
    array.select {|word| word.any? { |key, value|  value == ("cool")}
+ end
 end
 
 def organize_schools
