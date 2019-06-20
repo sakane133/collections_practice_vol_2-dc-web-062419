@@ -30,9 +30,9 @@ def count_elements(arr)
   end
 
 def merge_data(k,v)
-    k.each do |name_hash|
-    data.each do |hash|
-      name_hash.merge!(hash[name_hash[:first_name]])
+    k.each do |name|
+    v.each do |hash|
+      name.merge!(hash[name[:first_name]])
     end
   end
 end
