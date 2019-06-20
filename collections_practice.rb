@@ -41,6 +41,8 @@ def find_cool(array)
    array.select {|word| word.any? { |key, value|  value == ("cool")}}
 end
 
-def organize_schools
+def organize_schools(school)
+  location = {}
+  
   
 end
