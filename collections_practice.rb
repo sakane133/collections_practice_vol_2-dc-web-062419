@@ -46,9 +46,9 @@ def organize_schools(school)
    school.each do |skool, locations|
       locations.each do |info, loc|
         if location[loc] == nil
-          location[loc] = [school]
+          location[loc] = [skool]
         else
-          location[loc] << school
+          location[loc] << skool
         end
       end
     end
