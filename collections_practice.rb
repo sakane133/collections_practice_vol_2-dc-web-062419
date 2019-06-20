@@ -38,7 +38,7 @@ def merge_data(k,v)
 end
 
 def find_cool(array)
-   array.select {|word| word if word.has_value?("cool")}
+   array.select {|word| word.any? { |key, value|  value == ("cool")}
 end
 
 def organize_schools
