@@ -29,8 +29,12 @@ def count_elements(arr)
         i[:count] = count}
   end
 
-def merge_data
-  
+def merge_data(k,v)
+    k.each do |name_hash|
+    data.each do |hash|
+      name_hash.merge!(hash[name_hash[:first_name]])
+    end
+  end
 end
 
 def find_cool
