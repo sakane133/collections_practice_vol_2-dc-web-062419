@@ -45,13 +45,13 @@ def organize_schools(school)
   location = {}
    school.each do |skool, locations|
       locations.each do |info, loc|
-        if by_location[loc] == nil
-          by_location[loc] = [school]
+        if location[loc] == nil
+          location[loc] = [school]
         else
           by_location[loc] << school
         end
       end
     end
-    by_location
+    location
   
 end
